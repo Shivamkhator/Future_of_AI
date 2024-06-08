@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey on AI & its Future</title>
+</head>
+<body>
+<h1 id="title">Future of AI</h1>
+<p id="description">Thank you for participating in this survey! </p>
+<form id="survey-form">
+    <fieldset>
+        <label id="name-label" for="name">Name  <input id="name" type="text" placeholder="Enter your name" required></label>
+        <label id="email-label" for="email">Email <input id="email" type="email" placeholder="Enter your email" required></label>
+        <label id="number-label" for="number">Age (optional)  <input id="number" type="number" placeholder="Age" min="13" max="60" required></label>
+        <label for="dropdown">Which option best describes your current role?
+            <select id="dropdown" >
+                <option value="" selected disabled>Select current role</option>
+                <option value="1">Student</option>
+                <option value="2">Employee</option>
+                <option value="3">Entrepreneur</option>
+                <option value="4">Other</option>
+            </select></label>
+    </fieldset>
+    <fieldset>
+        <legend>What is your opinion on AI & its future?</legend>
+        <label for="opinion"><input type="radio" id="opinion" value="2" class="inline" name="AI-future">Highly Beneficial</label>
+        <label for="opinion"><input type="radio" value="1"  id="opinion" class="inline" name="AI-future">Slightly Beneficial</label>
+        <label for="opinion"><input type="radio" id="opinion" value="0"  class="inline" name="AI-future" checked>Neutral</label>
+        <label for="opinion"><input type="radio" id="opinion" value="-1"  class="inline" name="AI-future">Slightly Detrimental</label>
+        <label for="opinion"><input type="radio" id="opinion" value="-2"  class="inline" name="AI-future">Highly Detrimental</label>
+    </fieldset>
+    <fieldset>
+        <label for="explain">Any Explanation? <textarea name="explain"  id="explain" rows="3" cols="30" placeholder="Enter your opinion here..."></textarea>
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>Which of these sectors do you find AI to dominate in the future? (Check all that apply)</legend>
+        <label for="sectors"><input class="inline"value="1" type="checkbox" id="sectors" name="education">Education</label>
+        <label for="sectors"><input class="inline"value="2" type="checkbox" id="sectors" name="R&D">Research & Development</label>
+        <label for="sectors"><input class="inline"value="3" type="checkbox" id="sectors" name="healthcare">Healthcare</label>
+        <label for="sectors"><input class="inline" value="4" type="checkbox" id="sectors" name="money">Finance and Investment</label>
+        <label for="sectors"><input class="inline" value="5" type="checkbox" id="sectors" name="customer">Customer Service</label>
+        <label for="sectors"><input class="inline" value="6" type="checkbox" id="sectors" name=" analysis">Market Analysis</label>
+    </fieldset>
+    <label for="submit"><input type="submit" name="submit" id="submit" </label>
+</form>
+<p>This Survey was made by <a href="https:/www.linkedin.com/in/shivamkhator" target="_blank">Shivam Khator</a></p>
+</body>
+</html>
